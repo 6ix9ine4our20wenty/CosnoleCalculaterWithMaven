@@ -1,6 +1,6 @@
-# examples
-# Thumbs.db
-#*.bak
-# bin/
+examples
+Thumbs.db
+*.bak
+bin/
 
 target/
