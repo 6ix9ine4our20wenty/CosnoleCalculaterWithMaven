@@ -5,7 +5,9 @@ import static junit.framework.TestCase.assertTrue;
 
 public class CalculatorTest{
     Calculator testee;
-
+        /*
+    Addition
+        */
     @Test
     public void testSummePositive() {
         testee = new Calculator();
@@ -43,7 +45,17 @@ public class CalculatorTest{
     }
     @Test(expected = ArithmeticException.class)
     public void testSummeOverflow() {
+       testee = new Calculator();
         assertEquals((long) Integer.MAX_VALUE + 1, testee.summe(Integer.MAX_VALUE, 1));
     }
+        /*
+    Subtraktion
+        */
+
+        @Test
+    public void TestDifferenz(){
+            testee = new Calculator();
+            assertTrue(testee.differenz(2, 1) == 2);
+        }
 
 }
